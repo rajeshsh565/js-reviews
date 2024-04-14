@@ -1,0 +1,136 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+     background-color: rgb(50, 92, 78);
+}
+.container{
+     display: flex;
+     height: 100vh;
+     width: 100vw;
+     align-items: center;
+     justify-content: center;
+}
+.over{
+     text-align: center;
+}
+.review_card{
+     position: relative;
+     width: 500px;
+     height: 400px;
+     text-align: center;
+     border: 5px double greenyellow;
+     border-radius: 25px;
+     background-color: rgb(189, 251, 251);
+     padding: 10px 0px;
+     overflow-x: hidden;
+}
+.profile_pic{
+     position: relative;
+     width: 150px;
+     height: 150px;
+     left: 167.5px;
+     background: url(./download.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 50%;
+     margin: 10px 0px;
+
+}
+h2{
+     margin: 10px 0px;
+     font-size: 3rem;
+}
+.name{
+     margin: 10px 0px;
+     /* animation: entry_ani 1s ease-in; */
+}
+.nameStyle{
+     font-size: 1.5rem;
+     font-weight: bolder;
+     letter-spacing: 5px;
+}
+.profession{
+     margin: 10px 0px;
+}
+.professionStyle{
+     font-size: 1.1rem;
+     font-family: cursive;
+     font-weight: bolder;
+     color: rgb(38, 38, 193);
+}
+.review{
+     margin: 10px 10px;
+}
+.swipe{
+     margin: 10px 0px;
+}
+.swipe i{
+     margin: 0px 10px;
+     transition: all 0.3s ease-in;
+}
+.swipe i:hover{
+     color: rgb(38, 38, 193);
+     transform: scale(1.5);
+}
+.btn{
+     margin-bottom: 10px;
+     font-size: 1rem;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background-color: rgba(42, 42, 135, 0.517);
+     border-radius: 5px;
+     border-style: solid;
+     padding: 2px;
+     transition: all 0.3s ease-in;
+}
+.btn:hover{
+     background-color: rgba(42, 42, 135, 0.75);
+}
+.animate_entry{
+     animation: entry_ani 300ms linear;
+}
+.animate_exit{
+     animation: exit_ani 300ms linear;
+}
+.animate_entry_2{
+     animation: entry_ani_2 300ms linear;
+}
+.animate_exit_2{
+     animation: exit_ani_2 300ms linear;
+}
+
+
+@keyframes entry_ani {
+     0% {
+          transform: translateX(75px);
+     }
+     100% {
+          transform: translateX(0px);
+     }
+}
+@keyframes exit_ani {
+     0% {
+          transform: translateX(0px);
+     }
+     100% {
+          transform: translateX(-75px);
+     }
+}
+@keyframes entry_ani_2 {
+     0% {
+          transform: translateX(-75px);
+     }
+     100% {
+          transform: translateX(0px);
+     }
+}
+@keyframes exit_ani_2 {
+     0% {
+          transform: translateX(0px);
+     }
+     100% {
+          transform: translateX(75px);
+     }
+}
